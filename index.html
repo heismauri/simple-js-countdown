@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown JS</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div id="countdown-area" class="countdown-area" data-timestamp="1704078000000"></div>
+  <script>
+    document.getElementById('countdown-area').dataset.timestamp = new Date(new Date().getFullYear() + 1, 0, 1).getTime();
+  </script>
+</body>
+</html>
